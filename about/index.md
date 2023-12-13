@@ -1,37 +1,27 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About Me
+tags: [about, resume, cv]
+date: 2023-12-13
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+A third-year Informatics Engineering student specializing in Machine Learning and Data Science, with experience developing recommendation systems using machine learning algorithms and creating interactive data analysis dashboards. Strong programming skills in languages such as Python and C++ have been acquired throughout the academic journey.
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+# EDUCATION
+#### Universitas Negeri Semarang - Bachelor of Computer Science (GPA: 3.94) | Aug 2021 - Jun 2025 (Expected)
+* Relevant Modules: Data Structure, Object Oriented Programming, Software Engineering, AI, Database Systems.
+* Achievement: Penerima Pendanaan Pekan Kreativitas Mahasiswa (PKM 8 Bidang) (2023): Dikti Kemendikbud RI
 
-## Preview
+# TRAINING
+#### Bangkit Academy led by Google, GoTo, and Traveloka - Machine Learning Cohort | Aug 2023 - Present
+* Part of a cohort of 4,700 selected from 47,000+ applicants to study various Machine Learning courses for 900 hours.
+* Develop and deploy machine learning models for sentiment analysis and text summarization of MSMEs feedback as part of final project.
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
-
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
-
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+# CERTIFICATIONS
+* TensorFlow: Data and Deployment (Coursera, 2023)
+* DeepLearning.AI TensorFlow Developer (Coursera, 2023)
+* Machine Learning Specialization (Coursera, 2023)
+* Mathematics for ML and Data Science (Coursera, 2023)
+* Databases and SQL for Data Science with Python (Coursera, 2023)
+* Belajar Dasar Visualisasi Data (Dicoding Academy, 2022)
