@@ -28,8 +28,9 @@ The TMDB 5000 Movie Dataset, sourced from Kaggle, comprises two CSV files: credi
 
 # Building the Recommendation System
 To implement Content-Based Filtering, we'll use a dataset of movies and their features. Popular Python libraries like Pandas and Scikit-learn will be employed to preprocess the data and build a recommendation model. The key steps include:
-    1. Data Preprocessing: Cleaning and organizing the movie dataset.
+#### 1. Data Preprocessing: Cleaning and organizing the movie dataset.
         In this case, the 'credits' and 'movies' datasets will be merged and replace the NaN values with empty strings.
+
         ```python
         # Merge 2 dataset
         df_credits.columns = ['id','tittle','cast','crew']
@@ -39,7 +40,7 @@ To implement Content-Based Filtering, we'll use a dataset of movies and their fe
         df['overview'] = df['overview'].fillna('')
         ```
 
-    2. Vectorization: Transforming textual data into numerical vectors for machine learning.
+#### 2. Vectorization: Transforming textual data into numerical vectors for machine learning.
         ```python
         tfidf = TfidfVectorizer(
             min_df=3, # Ignore less common words
@@ -53,16 +54,19 @@ To implement Content-Based Filtering, we'll use a dataset of movies and their fe
         tfidf_matrix.shape
         ```
 
-    3. Similarity Calculation: Using cosine similarity to measure the similarity between movies.
+#### 3. Similarity Calculation: Using cosine similarity to measure the similarity between movies.
         ```python
         cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
         ```
 
-    4. Building the Recommendation Function: Creating a function that takes a movie as input and returns a list of similar movies.
+#### 4. Building the Recommendation Function: Creating a function that takes a movie as input and returns a list of similar movies.
         Before we make the function, we need to set up a way that links movie titles to their positions in the DataFrame using its title by construct a reverse map of indices and movie title.
+
         ```python
         indices = pd.Series(df.index, index=df['title']).drop_duplicates()
         ```
+        
+        The recs function is a recommendation engine designed to offer movie suggestions based on a provided movie title. Leveraging a precomputed cosine similarity matrix (cosine_sim), the function begins by identifying the index of the input movie title in the dataset. It then calculates the cosine similarity scores between the selected movie and all others in the dataset, sorting them in descending order.
 
         ```python
         def recs(title, cosine_sim=cosine_sim):
@@ -85,31 +89,23 @@ To implement Content-Based Filtering, we'll use a dataset of movies and their fe
             return df['title'].iloc[movie_indices]
         ```
 
-    5. Saving Key Components to Pickle Files
-        To enhance efficiency, we can save essential components of our recommendation system to pickle files to prepare the deployment:
-        * Saving Dataset
-            ```python
-            pickle.dump(df, open('movies_list.pkl', 'wb'))
-            ```
 
-        * Saving Cosine Similarity Matrix (cosine_sim.pkl)
-            ```python
-            pickle.dump(cosine_sim, open('similarity.pkl', 'wb'))
-            ```
+#### 5. Saving Key Components to Pickle Files
+        To enhance efficiency in preparation for deployment, we can save essential components of our recommendation system as pickle files. These components include the dataset, cosine similarity matrix (cosine_sim.pkl), and movie indices.
+        **Saving Dataset**
+        ```python
+        pickle.dump(df, open('movies_list.pkl', 'wb'))
+        ```
 
-        * Saving Movie Indices
-            ```python
-            pickle.dump(indices, open('indices.pkl', 'wb'))
-            ```
 
 # Deploying with Streamlit
 Streamlit is a user-friendly Python library for creating web applications with minimal effort. We'll use Streamlit to turn our recommendation system into an interactive web app. The steps include:
-    1. Installing Streamlit
+#### 1. Installing Streamlit
         ```python
             pip install streamlit
         ```
 
-    2. Creating the App: Designing the user interface and integrating the recommendation function including the TMDB API.
+#### 2. Creating the App: Designing the user interface and integrating the recommendation function including the TMDB API.
         For this script, we have three files that we saved previously to load. The cosine similarity matrix is loaded from pickle files, and movie data, such as titles and indices, is extracted from the relevant files. Additionally, we have a function to retrieve movie poster image URLs from The Movie Database (TMDb) API. 
 
         ```python
@@ -125,7 +121,7 @@ Streamlit is a user-friendly Python library for creating web applications with m
             return full_path
         ```
         
-    3. Launching the App: Running the Streamlit app locally for testing.
+#### 3. Launching the App: Running the Streamlit app locally for testing.
         ```python
         streamlit run app.py
         ```
