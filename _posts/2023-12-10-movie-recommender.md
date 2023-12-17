@@ -17,7 +17,7 @@ In the vast world of movies, finding the perfect film to watch can be a daunting
 Recommendation systems are essential tools in the digital age, helping users discover content tailored to their preferences. Content-Based Filtering is one of the popular approaches, relying on the characteristics of items and user profiles. In the context of movies, it involves analyzing the content of films and suggesting similar ones based on certain features.
 
 # Understanding Content-Based Filtering
-![Content-Based Filtering](https://github.com/malindard/movie-recommender/assets/content-based.png "Content-Based Filtering")
+![Content-Based Filtering](https://github.com/malindard/malindard.github.io/assets/img/movie-recs-assets/content-based.png "Content-Based Filtering")
 Content-Based Filtering relies on item features to make recommendations. In the case of movies, these features could include genres, actors, directors, and keywords. The system creates a profile for each user based on their preferences and recommends items that match those preferences.
 
 # TMDB 5000 Movie Dataset Overview
@@ -36,6 +36,7 @@ To implement Content-Based Filtering, we'll use a dataset of movies and their fe
             # Replace NaN values in overview column with empty string
             df['overview'] = df['overview'].fillna('')
         ```
+
     2. Vectorization: Transforming textual data into numerical vectors for machine learning.
         ```python
             tfidf = TfidfVectorizer(
@@ -44,19 +45,23 @@ To implement Content-Based Filtering, we'll use a dataset of movies and their fe
             ngram_range=(1,3), # Consider single words, pairs, and triplets
             stop_words='english') # Exclude common English words
         ```
+
         ```python
             tfidf_matrix = tfidf.fit_transform(df['overview'])
             tfidf_matrix.shape
         ```
+
     3. Similarity Calculation: Using cosine similarity to measure the similarity between movies.
         ```python
             cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
         ```
+
     4. Building the Recommendation Function: Creating a function that takes a movie as input and returns a list of similar movies.
         Before we make the function, we need to set up a way that links movie titles to their positions in the DataFrame using its title by construct a reverse map of indices and movie title.
         ```python
             indices = pd.Series(df.index, index=df['title']).drop_duplicates()
         ```
+
         ```python
             def recs(title, cosine_sim=cosine_sim):
                 # Find the index of the movie matching the provided title
@@ -77,16 +82,19 @@ To implement Content-Based Filtering, we'll use a dataset of movies and their fe
                 # Provide the titles of the top 10 most similar movies
                 return df['title'].iloc[movie_indices]
         ```
+
     5. Saving Key Components to Pickle Files
         To enhance efficiency, we can save essential components of our recommendation system to pickle files to prepare the deployment:
         * Saving Dataset
             ```python
             pickle.dump(df, open('movies_list.pkl', 'wb'))
             ```
+
         * Saving Cosine Similarity Matrix (cosine_sim.pkl)
             ```python
             pickle.dump(cosine_sim, open('similarity.pkl', 'wb'))
             ```
+
         * Saving Movie Indices
             ```python
             pickle.dump(indices, open('indices.pkl', 'wb'))
@@ -98,8 +106,10 @@ Streamlit is a user-friendly Python library for creating web applications with m
         ```python
             pip install streamlit
         ```
+
     2. Creating the App: Designing the user interface and integrating the recommendation function including the TMDB API.
         For this script, we have three files that we saved previously to load. The cosine similarity matrix is loaded from pickle files, and movie data, such as titles and indices, is extracted from the relevant files. Additionally, we have a function to retrieve movie poster image URLs from The Movie Database (TMDb) API. 
+
         ```python
             def fetch_poster(movie_id):
                 # API request to retrieve movie information
@@ -120,9 +130,9 @@ Streamlit is a user-friendly Python library for creating web applications with m
     
     On the website, users can either choose a movie from the dropdown list or manually type it. Upon clicking the 'Show Recommendations' button, the application presents five movie recommendations based on the similarity to the user's selection. Each recommendation includes the title and poster of the film, providing a visually enhanced experience for the user.
 
-    ![Landing Page](https://github.com/malindard/movie-recommender/assets/landing-page.png "Landing Page")
+    ![Landing Page](https://github.com/malindard/malindard.github.io/assets/img/movie-recs-assets/landing-page.png "Landing Page")
 
-    ![After user click show recommendation](https://github.com/malindard/movie-recommender/assets/after-recs.png "After user click show recommendation")
+    ![After user click show recommendation](https://github.com/malindard/malindard.github.io/assets/img/movie-recs-assets/after-recs.png "After user click show recommendation")
 
 
 # Conclusion
@@ -134,4 +144,5 @@ To use the repo there are several things to do:
 - Unzip 'dataset.zip' and 'frontend.zip' first
 - Run movie recommendation notebook to generate '.pkl' files.
 - In terminal run 'streamlit run app.py'
+
 [`Go to repo >>`](https://github.com/malindard/movie-recommender/)
