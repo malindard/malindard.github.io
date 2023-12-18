@@ -53,7 +53,7 @@ A Multi-Layer Perceptron, a fundamental component of deep learning, is employed 
 |Logistic Regression|   97.3%  |
 |     Naive Bayes   |   97%    |
 |      CNN-LSTM     |   99.5%  |
-|         MLP       |   98.5%  |
+|         MLP       |   98.5%  
 
 
 # Conclusion
