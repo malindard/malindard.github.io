@@ -19,7 +19,7 @@ Recommendation systems are essential tools in the digital age, helping users dis
 # Understanding Content-Based Filtering
 <figure>
 	<a href="https://raw.githubusercontent.com/malindard/movie-recommender/main/assets/content-based.png"><img src="https://raw.githubusercontent.com/malindard/movie-recommender/main/assets/content-based.png"></a>
-	<figcaption><a href="https://raw.githubusercontent.com/malindard/movie-recommender/main/assets/content-based.png" title="Content-Based Filtering">Content-Based Filtering</a>.</figcaption>
+	<figcaption><a href="https://data-flair.training/blogs/data-science-at-netflix/" title="Content-Based Filtering">Content-Based Filtering</a>.</figcaption>
 </figure>
 Content-Based Filtering relies on item features to make recommendations. In the case of movies, these features could include genres, actors, directors, and keywords. The system creates a profile for each user based on their preferences and recommends items that match those preferences.
 
@@ -67,20 +67,15 @@ Before we make the function, we need to set up a way that links movie titles to 
 indices = pd.Series(df.index, index=df['title']).drop_duplicates()
 {% endhighlight %}
 
-The recs function is a recommendation engine designed to offer movie suggestions based on a provided movie title. Leveraging a precomputed cosine similarity matrix `cosine_sim`, the function begins by identifying the index of the input movie title in the dataset. It then calculates the cosine similarity scores between the selected movie and all others in the dataset, sorting them in descending order.
+The `recs` function is a recommendation engine designed to offer movie suggestions based on a provided movie title. Leveraging a precomputed cosine similarity matrix `cosine_sim`, the function begins by identifying the index of the input movie title in the dataset. It then calculates the cosine similarity scores between the selected movie and all others in the dataset, sorting them in descending order.
 
 {% highlight python %}
 def recs(title, cosine_sim=cosine_sim):
         idx = indices[title]
-
         similarity_scores = list(enumerate(cosine_sim[idx]))
-
         similarity_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
-
         similarity_scores = similarity_scores[1:11]
-
         movie_indices = [i[0] for i in similarity_scores]
-
         return df['title'].iloc[movie_indices]
 {% endhighlight %}
 
