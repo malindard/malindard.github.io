@@ -32,21 +32,21 @@ Transfer learning is a deep learning technique where a model previously trained 
 ResNet50V2 is an enhanced variant of the ResNet50 architecture, boasting improved performance with 50 layers consisting of 49 convolutional layers and 1 fully connected layer.
 <figure>
 	<a href="https://raw.githubusercontent.com/malindard/brain-tumor-detection/main/assets/resnet50v2.png"><img src="https://raw.githubusercontent.com/malindard/brain-tumor-detection/main/assets/resnet50v2.png"></a>
-	<figcaption><a>ResNet50V2 architecture.</a>.</figcaption>
+	<figcaption><a>ResNet50V2 architecture.</a></figcaption>
 </figure>
 
 #### 2. VGG19:
 VGG19 is a CNN model comprising 19 layers, featuring a relatively straightforward architecture.
 <figure>
 	<a href="https://raw.githubusercontent.com/malindard/brain-tumor-detection/main/assets/vgg19.png"><img src="https://raw.githubusercontent.com/malindard/brain-tumor-detection/main/assets/vgg19.png"></a>
-	<figcaption><a>VGG19 architecture.</a>.</figcaption>
+	<figcaption><a>VGG19 architecture.</a></figcaption>
 </figure>
 
 #### 3. InceptionV3:
 InceptionV3 is a CNN model specifically designed to address computational efficiency issues in deep CNN architectures.
 <figure>
 	<a href="https://raw.githubusercontent.com/malindard/brain-tumor-detection/main/assets/inceptionv3.png"><img src="https://raw.githubusercontent.com/malindard/brain-tumor-detection/main/assets/inceptionv3.png"></a>
-	<figcaption><a>RInceptionV3 architecture.</a>.</figcaption>
+	<figcaption><a>InceptionV3 architecture.</a></figcaption>
 </figure>
 
 
@@ -78,9 +78,9 @@ In conclusion, this project underscores the significance of data augmentation in
 
 # References
 
-[1] Sethy, Prabira Kumar. “A data constrained approach for brain tumour detection using fused deep features and SVM.” Multimedia Tools and Applications, vol. 80, 2021, pp. 28745–28760.
+[1]Sethy, Prabira Kumar. “A data constrained approach for brain tumour detection using fused deep features and SVM.” Multimedia Tools and Applications, vol. 80, 2021, pp. 28745–28760.
 
-[2] “Transfer learning and fine-tuning.” TensorFlow, 15 December 2022, https://www.tensorflow.org/tutorials/images/transfer_learning. Accessed 1 April 2023.
+[2]“Transfer learning and fine-tuning.” TensorFlow, 15 December 2022, https://www.tensorflow.org/tutorials/images/transfer_learning. Accessed 1 April 2023.
 
 
 [`Go to repo >>`](https://github.com/malindard/brain-tumor-detection)

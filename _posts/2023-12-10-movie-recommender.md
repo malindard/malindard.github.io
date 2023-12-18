@@ -143,9 +143,10 @@ Building a movie recommendation system with Content-Based Filtering and deployin
 
 
 **The github repo details**
+
 To use the repo there are several things to do:
 - Unzip `dataset.zip` and `frontend.zip` first
 - Run movie recommendation notebook to generate `.pkl` files.
-- In terminal run `streamlit run app.py`
+- In the terminal run `streamlit run app.py`
 
 [`Go to repo >>`](https://github.com/malindard/movie-recommender/)
