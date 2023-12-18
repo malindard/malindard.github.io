@@ -5,7 +5,7 @@ date: 2023-06-15
 excerpt: "A Comparative Analysis of CNN Models with Augmented and Non-Augmented Datasets for Brain Tumor Detection"
 project: true
 tags:
-- Augmentation Data
+- Data Augmentation
 - Machine Learning
 - Computer Vision
 - Convolutional Neural Network (CNN)

@@ -45,6 +45,7 @@ A Multi-Layer Perceptron, a fundamental component of deep learning, is employed 
 
 
 # Result
+
 |      Algorithms   | Accuracy |
 |:------------------|---------:|
 |    Decision Tree  |   99.1%  |
@@ -53,7 +54,7 @@ A Multi-Layer Perceptron, a fundamental component of deep learning, is employed 
 |     Naive Bayes   |   97%    |
 |      CNN-LSTM     |   99.5%  |
 |         MLP       |   98.5%  |
-|====
+
 
 # Conclusion
 
