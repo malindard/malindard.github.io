@@ -3,7 +3,7 @@ layout: post
 title: Phising Detection with Traditional Machine Learning and Deep Learning Algorithms
 date: 2023-12-10
 excerpt: "Phising Detection With Decision Tree, Random Forest, Logistic Regression, Naive Bayes, CNN-LSTM, and Multi-Layer Perceptron."
-#project: true
+project: true
 tags:
 - Machine Learning
 - Deep Learning
