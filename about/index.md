@@ -20,11 +20,12 @@ A third-year Informatics Engineering student specializing in Machine Learning an
 
 # ORGANIZATIONAL EXPERIENCES
 #### SUVIFOR Robotics Club
-##### Secretary | Feb 2023 – Present
-- Organize official documents, covering organizational policies, procedures, and membership records, ensuring a systematic and accessible record-keeping system.
-##### Programmer | Feb 2022 – Present
-- Develop a python program that enables autonomous flight for UAV that combines object detection with color recognition.
-- Collaborate with technical team to ensure integration between the UAV and other systems, including sensors and payloads.
+##### A. Secretary | Feb 2023 – Present
+* Organize official documents, covering organizational policies, procedures, and membership records, ensuring a systematic and accessible record-keeping system.
+
+##### B. Programmer | Feb 2022 – Present
+* Develop a python program that enables autonomous flight for UAV that combines object detection with color recognition.
+* Collaborate with technical team to ensure integration between the UAV and other systems, including sensors and payloads.
 
 # CERTIFICATIONS
 * [Google Data Analytics](https://coursera.org/verify/professional-cert/YW54PM9BKW8S) (Coursera, Dec 2023)
