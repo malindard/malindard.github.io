@@ -29,7 +29,6 @@ To refine the quality of our dataset, I implemented a rule-based approach involv
 I employed VADER, a potent sentiment analysis tool, to evaluate the emotional tone of each review. The compound sentiment score provided by VADER allowed me to categorize reviews as positive, negative, or neutral. The sentiment analysis revealed that 51.4% of reviews were positive, 37.7% were negative, and 10.9% were neutral.
 <figure>
 	<a href="https://raw.githubusercontent.com/malindard/British-Airways-Data-Science-VE/main/assets/sentiment-analysis.png"><img src="https://raw.githubusercontent.com/malindard/British-Airways-Data-Science-VE/main/assets/sentiment-analysis.png"></a>
-	<figcaption><a>Sentiment Analysis</a></figcaption>
 </figure>
 
 ### Key Findings:
@@ -37,13 +36,11 @@ I employed VADER, a potent sentiment analysis tool, to evaluate the emotional to
 1. Most Frequent Words: My analysis of frequently spoken words unveiled insights into the topics discussed by passengers. The top words included "flight," "BA," "seat," "service," "London," and others, shedding light on crucial aspects of passenger experiences.
 <figure>
 	<a href="https://raw.githubusercontent.com/malindard/British-Airways-Data-Science-VE/main/assets/most-frequent-words.png"><img src="https://raw.githubusercontent.com/malindard/British-Airways-Data-Science-VE/main/assets/most-frequent-words.png"></a>
-	<figcaption><a>Most Frequent Words</a></figcaption>
 </figure>
 
 2. Wordcloud Visualization: To offer a visually appealing representation of the dataset, I generated a wordcloud. This visualization highlighted the prominent terms, providing a quick overview of the most prevalent words in the reviews.
 <figure>
 	<a href="https://raw.githubusercontent.com/malindard/British-Airways-Data-Science-VE/main/assets/wordcloud.png"><img src="https://raw.githubusercontent.com/malindard/British-Airways-Data-Science-VE/main/assets/wordcloud.png"></a>
-	<figcaption><a>Wordcloud</a></figcaption>
 </figure>
 
 ### Conclusion:
@@ -63,7 +60,6 @@ I began by conducting EDA to gain insights into the dataset's statistical proper
 To prepare the data for modeling, I converted categorical columns into numerical formats using factorization. Subsequently, I performed mutual information analysis, identifying the most influential features related to booking completion. The top six features included route, booking origin, flight duration, wants extra baggage, length of stay, and number of passengers.
 <figure>
 	<a href="https://raw.githubusercontent.com/malindard/British-Airways-Data-Science-VE/main/assets/top-feature.png"><img src="https://raw.githubusercontent.com/malindard/British-Airways-Data-Science-VE/main/assets/top-feature.png"></a>
-	<figcaption><a>Top Features.</a></figcaption>
 </figure>
 
 ### Model Building:
