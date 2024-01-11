@@ -14,7 +14,7 @@ comments: true
 # Introduction
 In this [British Airways Data Science Program](https://www.theforage.com/simulations/british-airways/data-science-yqoz?ref=itjjtDEicDFoXtLm2), participants are invited to step into the shoes of a British Airways team member, gaining firsthand experience in tasks that mirror the daily endeavors of their Data Science team. From scraping customer review data to constructing predictive models, this program provides a unique opportunity to explore the captivating world of data-driven decision-making.
 
-# Web Scraping
+# 1. Web Scraping
 [`Task 1 >>`](https://github.com/malindard/British-Airways-Data-Science-VE/blob/main/Task%201%20-%20Code.ipynb)
 
 In this notebook, I am tasked with extracting and exploring British Airways passenger reviews from the well-known travel review site, Skytrax. Through web scraping techniques with BeautifulSoup Python, I collected a dataset of 1,200 reviews, which offered a comprehensive glimpse of customer sentiment towards the airline.
@@ -50,7 +50,7 @@ My exploration into British Airways reviews using web scraping and sentiment ana
 The cleaned and processed dataset, along with sentiment analysis results, has been saved to a CSV file named [BA_reviews.csv](https://github.com/malindard/British-Airways-Data-Science-VE/blob/main/Task%201%20-%20BA_reviews.csv) This file serves as a valuable resource for further analyses and can be utilized for ongoing monitoring of customer sentiments.
 
 
-# Making Predictive Models
+# 2. Making Predictive Models
 [`Task 2 >>`](https://github.com/malindard/British-Airways-Data-Science-VE/blob/main/Task%202%20-%20Code.ipynb)
 
 ### Exploratory Data Analysis (EDA):
