@@ -3,7 +3,7 @@ layout: post
 title: Customer Buying Behaviour Analysis
 date: 2023-06-30
 excerpt: "Completed tasks that replicated the work British Airways' Data Science team did consisting of collecting customer review data and creating predictive models."
-#project: true
+project: true
 tags:
 - Data Analytics
 - Scraping
