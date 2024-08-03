@@ -19,6 +19,7 @@ I am a 4th year Informatics Engineering student looking for opportunities in the
 * Performed data input, grouping, and cleaning by handling more than 500 Pemberi Upah (PU) company membership registration data entries on Excel daily.
 * Utilized data visualization tools such as Excel and Looker Studio for data analysis.
 * Developed interactive dashboards to visualize BPJSTK membership data and employee performance using Looker Studio.
+
 #### Bangkit Academy led by Google, GoTo, and Traveloka - Machine Learning Cohort | August 2023 - January 2024
 * Part of a cohort of 4,700 selected from 47,000+ applicants to study various Machine Learning courses for 900 hours.
 * Gained expertise in AI, NLP, machine learning, and data analytics through Bangkit Academy's TensorFlowbased curriculum.
@@ -29,6 +30,7 @@ I am a 4th year Informatics Engineering student looking for opportunities in the
 #### SUVIFOR Robotics Club
 ##### A. Secretary | February 2023 – January 2024
 * Organized official documents, covering organizational policies, procedures, and membership records, ensuring a systematic and accessible record-keeping system.
+
 ##### B. Programmer | February 2022 – January 2024
 * Proficiently used programming languages such as Python and C++ for drone development.
 * Developed python programs for autonomous drone flight that combines object detection with color recognition.
@@ -45,4 +47,4 @@ I am a 4th year Informatics Engineering student looking for opportunities in the
 * [Belajar Dasar Visualisasi Data](https://www.dicoding.com/certificates/JLX1GDE86Z72) (Dicoding Academy, Jun 2022)
 
 
-#### [`My CV >>`](https://drive.google.com/file/d/1SlNRnIfKXpbq2ryIAraf6Y-gbHbJNsUY/view?usp=sharing)
+[`My CV >>`](https://drive.google.com/file/d/1SlNRnIfKXpbq2ryIAraf6Y-gbHbJNsUY/view?usp=sharing)
