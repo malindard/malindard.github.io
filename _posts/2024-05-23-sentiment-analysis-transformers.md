@@ -27,11 +27,14 @@ Data preprocessing involves several steps to clean and prepare the text data for
 * Text Tokenization: Tokenizing text for both Naive Bayes (using CountVectorizer and TfidfTransformer) and Transformers (using BERT's tokenizer).
 
 # Model Architecture
+
 #### Base Model
+
 * Utilizes CountVectorizer and TF-IDF Transformer for tokenizing and vectorizing text.
 * Implements a Multinomial Naive Bayes classifier to predict sentiment based on tokenized features.
 
 #### BERT (Bidirectional Encoder Representations from Transformers):
+
 * Uses the BERT model from Hugging Face's transformers library.
 * Tokenizes input text and generates input sequences using BERT's tokenizer.
 * Develops a custom neural network architecture around TFBertModel for sentiment classification.
