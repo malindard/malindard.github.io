@@ -22,8 +22,8 @@ This project focuses on building a phishing detection system that classifies whe
 
 # Dataset & Features
 * URL Classification: 23 handcrafted features are extracted from the user-submitted URL, including domain structure, HTTPS usage, character patterns, and redirect behavior. [`Phishing Dataset >>`](https://data.mendeley.com/datasets/c2gw7fy2j4/3)
-* Email Classification: Email address features are derived from the CEAS dataset. Only email-related features are used, and additional engineered features are created from the email string (e.g., domain reputation, uncommon subdomains, numeric ratio).
-* Content Analysis: After classifying the URL, web content (meta tags, titles, forms, scripts) is scraped and analyzed using a LLM. [`Email Dataset >>`](https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset)
+* Email Classification: Email address features are derived from the CEAS dataset. Only email-related features are used, and additional engineered features are created from the email string (e.g., domain reputation, uncommon subdomains, numeric ratio). [`Email Dataset >>`](https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset)
+* Content Analysis: After classifying the URL, web content (meta tags, titles, forms, scripts) is scraped and analyzed using a LLM. 
 
 # Model & Architecture
 1. URL and Email Classification
