@@ -6,13 +6,16 @@ date: 2024-07-25
 comments: false
 ---
     
-I am a 4th year Informatics Engineering student looking for opportunities in the field of artificial intelligence and data science. My expertise in data analytics and machine learning is complemented by practical experience gained through various programs and internship. Strong programming skills in languages such as Python and SQL have been acquired throughout the academic journey.
+I'm a final-year Informatics Engineering student with a deep interest in artificial intelligence and data science. Throughout my academic journey, I've built AI-powered solutions, from an award-winning maternal health chatbot to a phishing detection system using LLMs. I enjoy solving real-world problems through code, and I thrive in collaborative, fast-paced environments. With a strong foundation in machine learning, NLP, and software engineering, I'm eager to bring impactful innovation to the tech industry.
 
 # EDUCATION
 #### Universitas Negeri Semarang - Bachelor of Computer Science (GPA: 3.94) | Aug 2021 - Jun 2025 (Expected)
 * GPA: 3.94/4.00
 * Relevant Modules: Data Structure, Object Oriented Programming, Software Engineering, AI, Database Systems, Statistics.
-* Achievement: : Recipient of funding in Pekan Kreativitas Mahasiswa (PKM) from Kemendikbud Ristek RI (2023) [`Certificate >>`](https://drive.google.com/file/d/1uH1RULLqFqvRQhlTHmhXa7kGI1-ko-F3/view?usp=sharing)
+* Achievement: : 
+1. Finalist at GEMASTIK XVII 2024 in Data Mining [`Certificate >>`](https://drive.google.com/file/d/1QXqVZoWM4iZhkzvB9pgjdjZUxJkUZQbn/view?usp=sharing)
+2. 1st Place Winner at PKM-AMLI (PKM-KC) 2024 with project MILA Chatbot – Aplikasi Chatbot Ibu Hamil Berbasis AI [`Certificate >>`](https://drive.google.com/file/d/1_LbKT6wBJ5BWh7fskBcvDBtZ2K820GP8/view?usp=sharing)
+3. Recipient of funding in Pekan Kreativitas Mahasiswa (PKM) from Kemendikbud Ristek RI (2023) [`Certificate >>`](https://drive.google.com/file/d/1uH1RULLqFqvRQhlTHmhXa7kGI1-ko-F3/view?usp=sharing)
 
 # EXPERIENCES
 #### BPJS Ketenagakerjaan - Data Analyst Intern | February - July 2024
@@ -47,4 +50,4 @@ I am a 4th year Informatics Engineering student looking for opportunities in the
 * [Belajar Dasar Visualisasi Data](https://www.dicoding.com/certificates/JLX1GDE86Z72) (Dicoding Academy, Jun 2022)
 
 
-[`My CV >>`](https://drive.google.com/file/d/1SlNRnIfKXpbq2ryIAraf6Y-gbHbJNsUY/view?usp=sharing)
+[`My CV >>`](https://drive.google.com/file/d/1W7XkPZdwkRffmGpZUKUsg4JFOxS95kLP/view?usp=sharing)
