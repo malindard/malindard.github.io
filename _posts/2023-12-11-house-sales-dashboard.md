@@ -3,7 +3,7 @@ layout: post
 title: House Sales Dashboard
 date: 2023-12-11
 excerpt: "House sales dashboard in King County, Washington using Tableau."
-project: true
+#project: true
 tags:
 - Dashboard
 - Tableau
