@@ -41,3 +41,5 @@ The backend system includes a Flask API hosted on Google Cloud App Engine, while
 
 # Conclusion
 MILA Chatbot successfully demonstrates how AI can be applied to support maternal health education in a conversational format. Combining intent classification with generative AI enables more meaningful and helpful interactions. The deployment on Google Cloud ensures accessibility, and real-user testing confirms its practical value. This project highlights the potential for AI-driven health assistants to improve access to trusted information for mothers.
+
+[`Go to Project >>`](https://github.com/ReginaAyumi/mila-chatbot/)
