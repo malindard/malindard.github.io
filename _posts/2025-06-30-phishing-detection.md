@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Phishing URL and Email Address Checker Using ML and LLM
+title: BUMATARA - Phishing URL Checker
 date: 2025-06-30
 excerpt: "An AI-based system to detect phishing websites and email addresses using feature extraction, XGBoost classification, and LLM content analysis"
 project: true
@@ -45,7 +45,7 @@ This project focuses on building a phishing detection system that classifies whe
 * Backend: Python, Flask API, MySQL
 * Frontend: Laravel (in development)
 * LLM Access: OpenRouter API with DeepSeek v3
-* Hosting: Planned deployment on AWS EC2 instance
+* Hosting: Models deployed on AWS EC2 instance
 
 # Result
 * URL classifier achieved 96% accuracy.
@@ -55,4 +55,5 @@ This project focuses on building a phishing detection system that classifies whe
 # Conclusion
 The phishing detection system combines traditional ML and LLM to create a unified tool for detecting malicious URLs and email addresses. It emphasizes both accuracy and explainability, making it useful for general users and cybersecurity applications. Future developments will focus on refining the email classifier and fully deploying the platform.
 
-[`Go to Project >>`](https://github.com/FariskaRatna/phishing-checker)
+[`Go to Project - BUMATARA >>`](https://bumatara.com/)
+[`Go to my task in this project >>`](https://github.com/malindard/phishing-checker-flask)
