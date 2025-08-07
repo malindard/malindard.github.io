@@ -6,7 +6,9 @@ date: 2024-07-25
 comments: false
 ---
     
-I'm a final-year Informatics Engineering student with a deep interest in artificial intelligence and data science. Throughout my academic journey, I've built AI-powered solutions, from an award-winning maternal health chatbot to a phishing detection system using LLMs. I enjoy solving real-world problems through code, and I thrive in collaborative, fast-paced environments. With a strong foundation in machine learning, NLP, and software engineering, I'm eager to bring impactful innovation to the tech industry.
+I’m a fresh graduate in Informatics Engineering with a strong focus on artificial intelligence and data science. Over the past few years, I’ve built AI-powered projects ranging from an award-winning maternal health chatbot to phishing detection systems using LLMs. My interests span machine learning, NLP, computer vision and full-stack AI development. Whether it's deep learning on medical images or fine-tuning transformers for sentiment analysis, I’m always excited to learn and build. 
+
+I thrive in collaborative, fast-paced environments and love using code to solve meaningful problems. I’m excited to start the next chapter of my journey of building innovative, real-world AI solutions with passionate teams.
 
 # EDUCATION
 #### Universitas Negeri Semarang - Bachelor’s in Informatics Engineering (GPA: 3.93) | August 2021 - July 2025
