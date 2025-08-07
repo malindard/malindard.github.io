@@ -92,7 +92,7 @@ Explore the live system here:
 
 # Conclusion
 
-BUMATARA demonstrates how **hybrid AI systems** can combine traditional ML pipelines with modern LLMs to solve real-world cybersecurity problems. As the AI engineer on this project, I designed and deployed the models, built the feature extraction layer, and integrated the OpenRouter LLM pipeline for content analysis.
+BUMATARA demonstrates how **hybrid AI systems** can combine traditional ML pipelines with modern LLMs to solve real-world cybersecurity problems. As the AI engineer on this project, I designed and deployed the models then integrated the OpenRouter LLM pipeline for content analysis.
 
 This system shows that phishing detection doesn't have to be a black box. By blending structure-based classification with explainable AI, BUMATARA balances precision with usability — a practical solution for individual users and organizations alike.
 
