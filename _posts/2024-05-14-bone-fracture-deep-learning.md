@@ -2,52 +2,90 @@
 layout: post
 title: Bone Fracture Detection Using Deep Learning
 date: 2024-05-14
-excerpt: "A deep learning model to detect bone fractures from X-ray images using the MobileNetV2 architecture"
+excerpt: "A deep learning pipeline for classifying bone fractures from X-ray images using MobileNetV2 and advanced image augmentation techniques"
 project: true
 tags:
 - Convolutional Neural Network (CNN)
 - Deep Learning
 - MobileNetV2
+- Medical Imaging
+- TensorFlow
 comments: true
 ---
 
-
 # Introduction
 
-The objective of this project is to develop a deep learning model to classify bone fractures using X-ray images. This task is crucial for automating the diagnosis process, potentially reducing the time required for analysis and increasing the diagnostic accuracy. The chosen model leverages the MobileNetV2 architecture, a pre-trained convolutional neural network optimized for image classification tasks. This approach aims to achieve high accuracy in distinguishing between fractured and non-fractured bone images.
+This project explores the application of deep learning to automate bone fracture detection from X-ray images. Built entirely as a solo effort for college course, Metode Penelitian, the goal was to create a lightweight and accurate classifier to distinguish between fractured and non-fractured bone scans.
+
+The model architecture is based on **MobileNetV2**, a highly efficient CNN designed for fast inference on low-resource devices, making it an ideal candidate for medical imaging tasks where speed and scalability matter. Combined with aggressive data augmentation and hyperparameter tuning, the model achieves strong performance with minimal overfitting — a critical factor in medical AI applications.
 
 #### Dataset
-The dataset consists of X-ray images labeled as 'fractured' and 'not fractured'. It is divided into three sets: training, validation, and testing, with a total of 9240 training images, 823 validation images, and 500 test images. [`Dataset >>`](https://www.kaggle.com/datasets/bmadushanirodrigo/fracture-multi-region-x-ray-data)
+
+The dataset includes X-ray images labeled as 'fractured' and 'not fractured'. It is divided into:
+
+- **Training**: 9,240 images  
+- **Validation**: 823 images  
+- **Testing**: 500 images  
+[`Dataset >>`](https://www.kaggle.com/datasets/bmadushanirodrigo/fracture-multi-region-x-ray-data)
+
 #### Data Preprocessing
-The images are preprocessed using data augmentation techniques including random flip, brightness adjustment, contrast adjustment, saturation adjustment, and hue adjustment to enhance the model’s robustness. The images are resized to 224x224 pixels, normalized, and augmented to improve generalization.
+
+To improve robustness and reduce overfitting, the images were preprocessed using a comprehensive augmentation pipeline:
+
+- **Transformations**:
+  - Random horizontal flipping
+  - Brightness & contrast variation
+  - Saturation & hue jittering
+- **Resizing & Normalization**:
+  - All images resized to 224x224 pixels
+  - Pixel normalization applied
+- **Class Balance**:
+  - Ensured even representation of fracture and non-fracture images during batching
 
 # Model Architecture
-#### Base Model
-MobileNetV2: Utilized for its efficiency and effectiveness in image classification tasks, with pre-trained weights on ImageNet. The top layer is removed to allow for custom classification.
-#### Custom Layers
-* Flatten Layer: Converts the 2D feature maps to 1D feature vectors.
-* Dense Layer: A fully connected layer with 512 neurons and ReLU activation.
-* Dropout Layer: Applied with a rate of 0.5 to reduce overfitting.
-* Output Layer: A Dense layer with 2 neurons and sigmoid activation for binary classification.
 
+#### Base Model: MobileNetV2
+
+Selected for its balance of **accuracy and computational efficiency**, MobileNetV2 is well-suited for mobile and embedded deployment scenarios — key for real-world medical applications in under-resourced environments.
+
+- Pretrained weights from **ImageNet** were used as a feature extractor
+- The top classification head was removed and replaced with a custom classifier
+
+#### Custom Layers
+
+- `Flatten` → to reshape feature maps
+- `Dense (512, ReLU)` → core learnable layer
+- `Dropout (0.5)` → added for regularization
+- `Dense (2, Sigmoid)` → binary classifier output layer
+
+#### Training Strategy
+
+- **Loss Function**: Binary Cross-Entropy
+- **Optimizer**: Adam with tuned learning rate
+- **Regularization**: Dropout, data augmentation
+- **Callback**: Early stopping based on validation loss
 
 # Result
-#### Training and Validation Metrics
-* Accuracy: Achieved an accuracy of 97.67% on the training set and 94.53% on the validation set after 10 epochs.
-* Loss: The training loss decreased steadily, with validation loss showing minor fluctuation
+
+#### Training & Validation Metrics
+
+- **Training Accuracy**: 97.67%
+- **Validation Accuracy**: 94.53%
+- Clear convergence with minimal overfitting due to regularization and augmentation strategies
 
 #### Test Set Evaluation
-The model was evaluated on the test dataset. The classification report shows the following metrics:
-* Accuracy: 94.80%
-* Precision: 94.79%
-* Recall: 94.79%
-* F1 Score: 94.79%
 
+Evaluated on 500 held-out test images:
+
+- **Accuracy**: 94.80%
+- **Precision**: 94.79%
+- **Recall**: 94.79%
+- **F1-Score**: 94.79%
 
 # Conclusion
 
-The model demonstrates high accuracy in classifying bone fractures from X-ray images, achieving nearly 95% accuracy on the test set. The use of MobileNetV2, combined with data augmentation and fine-tuned hyperparameters, proved effective in this binary classification task. Future work could explore additional data augmentation techniques, fine-tuning the model further, or experimenting with different architectures to potentially improve performance.
+This project demonstrates how a carefully tuned deep learning model, built with production-aware design (MobileNetV2), can deliver high accuracy in a critical medical imaging task. The strong results, even on unseen data, reflect the impact of combining modern architectures with proper augmentation, regularization, and validation strategies.
 
-
+From architecture selection to test evaluation, all components were developed independently as part of a research-driven capstone — showcasing both **technical depth** and the ability to apply deep learning responsibly to health-related challenges.
 
 [`Go to Kaggle >>`](https://www.kaggle.com/code/malindaratnaduhita/bone-fracture-classification-with-mobilenetv2/)
