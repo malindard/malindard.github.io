@@ -123,14 +123,14 @@ Other challenges:
 - Add historical memory for previous topics via Qdrant filters
 
 ---
+[View on GitHub →](https://github.com/malindard/langchain-ai-news-generator)
+---
 
 # Related Projects
 
 **👉 Also check out:**  
-A similar project built using **CrewAI** instead of **LangChain** — leaner agent execution, easier role setup, same great results, minus Streamlit.
+A similar project built using **CrewAI** instead of **LangChain** — leaner agent execution, easier role setup, same great results, minus Streamlit. [Check the similar project →](https://github.com/malindard/multi-agent-ai-blog-generator)
 
 > "Let the agents do the research — you just pick the topic."
-
-[View on GitHub →](https://github.com/malindard/langchain-ai-news-generator)
 
 ---
