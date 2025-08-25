@@ -30,7 +30,7 @@ Deployed with **Streamlit** for UI and **FastAPI** for backend APIs.
 # Motivation
 
 I wanted to solve a common pain:  
-> "I have a pile of policies, contracts, or notes — can I just *ask questions* instead of searching manually?"
+> "I have a pile of college notes — can I just *ask questions* instead of searching manually?"
 
 Rather than relying on generic chatbots, this app enforces **strict grounding**:  
 - If an answer isn’t in the docs, it says so  
